@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: poppins;
 }
 
 html,
@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-color: #002c15;
+    background: linear-gradient(to bottom, #00242C 0%, #007791 74%);
 }
 
 nav {
@@ -23,8 +23,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 90px;
-    /* background-color: rgb(209, 16, 16); */
+    padding: 50px 90px;
+    background-color: rgb(5, 72, 91);
 }
 
 .navLink {
@@ -33,10 +33,9 @@ nav {
     gap: 20px;
 }
 
-.logo h1 {
-    background-color: #c3f53c;
-    color: transparent;
-    -webkit-background-clip: text;
+.logo img {
+    filter: hue-rotate(80deg);
+
 
 }
 
@@ -54,9 +53,9 @@ nav {
     align-items: center;
     gap: 3px;
     justify-content: space-around;
-    font-size: 14px;
+    font-size: 16px;
     /* font-weight: none; */
-    color: white;
+    color: rgb(215, 213, 213);
     text-decoration: none;
 }
 
@@ -69,14 +68,31 @@ nav {
 }
 
 .btn button:nth-child(1) {
-    border: 2px solid #c3f53c;
-    color: #c3f53c;
+    border: 2px solid #00D1FF;
+    color: #00D1FF;
+    transition: all ease 0.3s;
+}
+
+.btn button:nth-child(1):hover {
+    border: 2px solid #00D1FF;
+    background-color: #00D1FF;
+    color: #00242C;
+
 }
 
 .btn button:nth-child(2) {
-    background-color: #c3f53c;
+    transition: all ease 0.3s;
+    background-color: #00D1FF;
     border: none;
-    color: #002c15;
+    color: #00242C;
+    border: 2px solid #00D1FF;
+
+}
+
+.btn button:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid #00D1FF;
+    color: #00D1FF;
 
 }
 
@@ -84,7 +100,7 @@ nav {
 .hero {
     width: 100%;
     height: 80vh;
-    color: white;
+    color: rgb(233, 233, 233);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,8 +119,8 @@ nav {
 }
 
 .icon {
-    text-decoration: underline;
-    background: linear-gradient(to bottom, #c3f53c, #00ff11);
+    /* text-decoration: underline; */
+    background: linear-gradient(to bottom, #00D1FF, #00fff2);
     color: transparent;
     -webkit-background-clip: text;
     font-weight: 600;
@@ -117,7 +133,7 @@ nav {
 .icon .p-img {
     width: 35px;
     height: 35px;
-    background: linear-gradient(to bottom, #c3f53c, #00ff11);
+    background: linear-gradient(150deg, #00D1FF, #00fff2);
     border-radius: 50%;
     text-align: center;
     position: relative;
@@ -125,20 +141,20 @@ nav {
 }
 
 .icon .p-img img {
-    width: 30px;
-
-
+    width: 40px;
     position: absolute;
-    top: 7px;
-    left: 3px;
-
-
-
+    top: 0;
+    right: 0;
 }
+
+.icon span {
+    border-bottom: 2px solid #0b5363
+}
+
 
 .main-content h1 {
     margin: 20px 0;
-    font-size: 5vw;
+    font-size: 4vw;
     line-height: 5vw;
 
 }
@@ -157,22 +173,26 @@ nav {
 }
 
 .hero-btn button {
-    height: 40px;
-    width: 190px;
+    height: 55px;
+    width: 170px;
     margin: 3px;
-    background-color: #035a2ded;
-    color: white;
-    border: 2px solid #a3a1a1;
+    background-color: #00D1FF;
+    color: rgb(97, 6, 6);
+    border: 2px solid #00242C;
     border-radius: 30px;
     text-align: center;
 }
 
-.hero-btn button span {
+.hero-btn button:hover {}
+
+.hero-btn button span,
+.hero-btn button svg {
     margin: 0;
     padding: 0;
     width: 20px;
     font-size: 18px;
-    color: #00ff11;
+    font-weight: 900;
+    color: #00242C;
 }
 
 .hero-btn button h6 {
@@ -219,7 +239,7 @@ nav {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top left, rgb(0, 251, 138) -14%, #c3f53c 91%);
+    background: linear-gradient(130deg, #00D1FF, #00fff2);
     transform: translate3d(0px, 22px, 0) scale(1);
     filter: blur(0px);
     opacity: var(1);
@@ -287,7 +307,7 @@ nav {
 }
 
 .exc-arrow span {
-    color: #002c15;
+    color: #000000;
     font-size: 2vw;
 }
 
@@ -300,7 +320,7 @@ nav {
     justify-content: center;
     /* align-items: center; */
     flex-direction: column;
-    row-gap:7px ;
+    row-gap: 7px;
 
 }
 
@@ -311,7 +331,7 @@ nav {
 
 .amount {
     font-size: 1.8vw;
-    color: #002c15;
+    color: #007791;
 }
 
 .currency {
@@ -362,7 +382,7 @@ nav {
     box-shadow: 0px 0 1px black;
     display: flex;
     flex-direction: column;
-    background-color: #002c15;
+    background-color: #00242C;
 }
 
 .Instant {
@@ -380,7 +400,7 @@ nav {
 
 .Instant span {
     font-size: 15px;
-    color: #00ff11;
+    color: #00D1FF;
 }
 
 .bank {
@@ -392,14 +412,14 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 15px  ;
+    padding: 0 15px;
     column-gap: 10px;
 }
 
-.bank-icon{
+.bank-icon {
     width: 35px;
     height: 35px;
-    background: linear-gradient(to bottom, #c3f53c, #00ff11);
+    background: linear-gradient(130deg, #00D1FF, #00fff2);
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -407,8 +427,8 @@ nav {
     align-items: center;
 }
 
-.contant h5{
-    color: #002c15;
+.contant h5 {
+    color: #0b5363;
     font-weight: 600;
 }
 
@@ -431,7 +451,11 @@ nav {
 .fee-amount {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #002c15;
-    font-weight: bolder;
+    color: #007791;
     text-align: right;
+}
+
+.fee-amount h6 {
+    font-weight: 800;
+
 }
