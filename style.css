@@ -27,17 +27,16 @@ nav {
     background-color: rgb(5, 72, 91);
 }
 
+.logo img {
+    filter: hue-rotate(80deg);
+}
+
 .navLink {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.logo img {
-    filter: hue-rotate(80deg);
-
-
-}
 
 .navLink ul {
     padding-left: 20px;
@@ -64,6 +63,7 @@ nav {
     border-radius: 20px;
     margin-right: 10px;
     background-color: transparent;
+    cursor: pointer;
 
 }
 
@@ -71,6 +71,7 @@ nav {
     border: 2px solid #00D1FF;
     color: #00D1FF;
     transition: all ease 0.3s;
+    
 }
 
 .btn button:nth-child(1):hover {
@@ -174,11 +175,11 @@ nav {
 
 .hero-btn button {
     height: 55px;
-    width: 170px;
+    width: 180px;
     margin: 3px;
     background-color: #00D1FF;
-    color: rgb(97, 6, 6);
-    border: 2px solid #00242C;
+    color: rgb(255, 255, 255);
+    border: none;
     border-radius: 30px;
     text-align: center;
 }
@@ -223,10 +224,6 @@ nav {
     color: black;
     border-radius: 30px;
     position: relative;
-    /* box-shadow:  
-    0px 33px 25px 0 #000, 
-     0 20px 0px 0px #ccc,
-     0 20px 0px 0px #fff;  */
     z-index: 99;
 
 }
@@ -264,7 +261,7 @@ nav {
     border-radius: inherit;
 }
 
-.box-t {
+.t-boxheader{
     padding: 20px;
     flex-direction: column;
     row-gap: 10px;
@@ -324,12 +321,12 @@ nav {
 
 }
 
-.you {
-    letter-spacing: 1px;
+.label {
+    letter-spacing: 0px;
     color: rgb(163, 161, 161);
 }
 
-.amount {
+.value, .exchangeValue {
     font-size: 1.8vw;
     color: #007791;
 }
@@ -427,7 +424,7 @@ nav {
     align-items: center;
 }
 
-.contant h5 {
+.bankTransfer h5 {
     color: #0b5363;
     font-weight: 600;
 }
@@ -451,7 +448,7 @@ nav {
 .fee-amount {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #007791;
+    color: #343434;
     text-align: right;
 }
 
