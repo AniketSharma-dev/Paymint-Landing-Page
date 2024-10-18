@@ -511,8 +511,14 @@ section {
         margin-bottom: 50px;
     }
 
+    .main-content h1{
+        font-size: 7vw;
+        letter-spacing: 1vw;
+        line-height: 7vw;
+    }
+
     .main-content p {
-        font-size: 1.8vw;
+        font-size: 1.9vw;
         width: 85%;
     }
 
