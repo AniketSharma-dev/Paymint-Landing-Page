@@ -15,9 +15,6 @@ header {
     width: 100%;
     height: auto;
     background: linear-gradient(to bottom, #00242C 35%, #007791 0%);
-
-    /* background-color: #002932; */
-
 }
 
 .head {
@@ -555,7 +552,8 @@ section {
         margin-top: 50px;
         width: 80%;
     }
-    .hero-right{
+
+    .hero-right {
         margin-bottom: 50px;
 
     }
@@ -596,6 +594,7 @@ section {
     .exc-arrow i {
         font-size: 2em;
     }
+
     .price .value,
     .currency .exchangeValue {
         font-size: 2.5vw;
@@ -628,6 +627,7 @@ section {
     .exc-arrow i {
         font-size: 1.8em;
     }
+
     .price .value,
     .currency .exchangeValue {
         font-size: 3.5vw;
