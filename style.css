@@ -414,6 +414,7 @@ section {
 .bank-icon {
     width: 35px;
     height: 35px;
+    font-size: 1.3em;
     background: linear-gradient(130deg, #00d1ff, #00fff2);
     border-radius: 50%;
     text-align: center;
