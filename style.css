@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #00242C 35%, #007791 0%);
+
+    /* background-color: #002932; */
+
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    flex-wrap: nowrap;
+
+}
+
+.btn button:nth-child(1) {
+    border: 2px solid #00D1FF;
+    color: #00D1FF;
+    transition: all ease 0.3s;
+
+}
+
+.btn button:nth-child(1):hover {
+    border: 2px solid #00D1FF;
+    background-color: #00D1FF;
+    color: #00242C;
+
+}
+
+.btn button:nth-child(2) {
+    transition: all ease 0.3s;
+    background-color: #00D1FF;
+    border: none;
+    color: #00242C;
+    border: 2px solid #00D1FF;
+
+}
+
+.btn button:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid #00D1FF;
+    color: #00D1FF;
+
+}
+
+
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.logo img {
+    margin-top: 15px;
+    filter: hue-rotate(80deg);
+}
+
+.navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.navLink li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(215, 213, 213);
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger .menu {
+    color: rgb(215, 213, 213);
+    font-size: 2rem;
+
+}
+
+
+
+
+section {
+    width: 100%;
+    background: linear-gradient(to bottom, #00242C 0%, #007791 74%);
+
+}
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hero-left {
+    width: 40%;
+}
+
+
+.icon {
+    background: linear-gradient(to bottom, #00D1FF, #00fff2);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.icon .p-img {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(150deg, #00D1FF, #00fff2);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon .p-img img {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon span {
+    border-bottom: 2px solid #0b5363
+}
+
+
+.main-content h1 {
+    margin: 20px 0;
+    font-size: 4vw;
+    line-height: 5vw;
+
+}
+
+.main-content p {
+    font-size: 1vw;
+    margin: 20px 0;
+    letter-spacing: 1px;
+
+}
+
+.hero-btn {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-btn button {
+    height: 55px;
+    width: 220px;
+    padding: 0 10px;
+    background-color: #00D1FF;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hero-btn button:hover {
+    background-color: transparent;
+    border: 2px solid #00d0ff;
+}
+
+.hero-btn button:active {
+    scale: 0.98;
+}
+
+.hero-btn button i {
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: #00242C;
+}
+
+.hero-btn button h6 {
+    font-size: 1vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.hero-right {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.t-box {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.t-box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(130deg, #00D1FF, #00fff2);
+    transform: translate3d(0px, 22px, 0) scale(1);
+    filter: blur(0px);
+    opacity: var(1);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.t-box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.t-boxheader {
+    padding: 20px;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid #eee; */
+    /* background: #000; */
+    border-radius: 10px;
+}
+
+.exchange {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    box-shadow: 0px 0 1px black;
+    position: relative;
+
+}
+
+.exc-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0 2px black;
+    /* border: 2px solid black; */
+    z-index: 9;
+    background-image: url();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.exc-arrow i {
+    color: #000000;
+    font-size: 2em;
+}
+
+
+.exchange .price {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    row-gap: 7px;
+
+}
+
+.label {
+    letter-spacing: 0px;
+    color: rgb(163, 161, 161);
+}
+
+.value,
+.exchangeValue {
+    font-size: 1.8vw;
+    color: #007791;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+    /* background-color: red; */
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.flag-USD::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(https://sp.yimg.com/ib/th?id=OIP.JC8F4H7IT3K3NZRyNC3feAHaEa&pid=Api&w=148&h=148&c=7&dpr=2&rs=1);
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.flag-EUR::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1200px-Flag_of_Europe.svg.png?20081021155534);
+    background-position: -10px 0;
+    background-size: cover;
+}
+
+
+.transfer {
+    box-shadow: 0px 0 1px black;
+    display: flex;
+    flex-direction: column;
+    background-color: #00242C;
+}
+
+.Instant {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.Instant span {
+    font-size: 15px;
+    color: #00D1FF;
+}
+
+.bank {
+    height: 60%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    column-gap: 10px;
+}
+
+.bank-icon {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(130deg, #00D1FF, #00fff2);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bankTransfer h5 {
+    color: #0b5363;
+    font-weight: 600;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate .fee,
+.fee-amount {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    color: rgb(91, 89, 89);
+    /* box-shadow: none; */
+    font-size: 15px;
+}
+
+.fee-amount {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #343434;
+    text-align: right;
+}
+
+.fee-amount h6 {
+    font-weight: 800;
+
+}
+
+
+
+@media (max-width:1200px) {
+
+
+
+    .hero-btn button {
+
+        width: 190px;
+        height: 45px;
+
+    }
+
+    .price .value,
+    .currency .exchangeValue {
+        font-size: 2vw;
+    }
+
+
+}
+
+@media (max-width:900px) {
+    nav {
+        padding: 0 50px;
+    }
+
+
+    .hero-btn button {
+        width: 150px;
+    }
+
+    .price .value,
+    .currency .exchangeValue {
+        font-size: 2.5vw;
+    }
+
+
+
+}
+
+@media (max-width:790px) {
+    nav {
+        padding: 0 50px;
+    }
+
+    .navLink {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 90px;
+        padding: 0;
+    }
+
+    .hero-left {
+        margin-top: 50px;
+        width: 80%;
+    }
+    .hero-right{
+        margin-bottom: 50px;
+
+    }
+
+    .main-content p {
+        font-size: 1.5vw;
+        width: 85%;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .hero-btn button i {
+        font-size: 2vw;
+        font-weight: 900;
+        color: #00242C;
+    }
+
+    .hero-btn button h6 {
+        font-size: 2vw;
+    }
+
+
+    .hero-btn button {
+        width: 100%;
+        /* Buttons take full width on small devices */
+        font-size: 0.9em;
+        /* Slightly smaller font on mobile */
+    }
+
+    .hero-btn button svg,
+    .hero-btn button span {
+        font-size: 1em;
+        /* Adjust icon size */
+    }
+
+    .exc-arrow i {
+        font-size: 2em;
+    }
+    .price .value,
+    .currency .exchangeValue {
+        font-size: 2.5vw;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .hero-btn button i {
+        font-size: 3vw;
+        font-weight: 900;
+        color: #00242C;
+    }
+
+    .hero-btn button h6 {
+        font-size: 3vw;
+    }
+
+
+    .hero-right {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .exc-arrow i {
+        font-size: 1.8em;
+    }
+    .price .value,
+    .currency .exchangeValue {
+        font-size: 3.5vw;
+    }
+
+}
