@@ -393,8 +393,8 @@ section {
     border: none;
 }
 
-.Instant span {
-    font-size: 15px;
+.Instant i {
+    font-size: 20px;
     color: #00d1ff;
 }
 
