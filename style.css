@@ -14,7 +14,7 @@ body {
 header {
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, #00242C 35%, #007791 0%);
+    background: linear-gradient(to bottom, #00242c 35%, #007791 0%);
 }
 
 .head {
@@ -24,7 +24,6 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-
 
 .btn {
     display: flex;
@@ -39,39 +38,33 @@ header {
     background-color: transparent;
     cursor: pointer;
     flex-wrap: nowrap;
-
 }
 
 .btn button:nth-child(1) {
-    border: 2px solid #00D1FF;
-    color: #00D1FF;
+    border: 2px solid #00d1ff;
+    color: #00d1ff;
     transition: all ease 0.3s;
-
 }
 
 .btn button:nth-child(1):hover {
-    border: 2px solid #00D1FF;
-    background-color: #00D1FF;
-    color: #00242C;
-
+    border: 2px solid #00d1ff;
+    background-color: #00d1ff;
+    color: #00242c;
 }
 
 .btn button:nth-child(2) {
     transition: all ease 0.3s;
-    background-color: #00D1FF;
+    background-color: #00d1ff;
     border: none;
-    color: #00242C;
-    border: 2px solid #00D1FF;
-
+    color: #00242c;
+    border: 2px solid #00d1ff;
 }
 
 .btn button:nth-child(2):hover {
     background-color: transparent;
-    border: 2px solid #00D1FF;
-    color: #00D1FF;
-
+    border: 2px solid #00d1ff;
+    color: #00d1ff;
 }
-
 
 nav {
     width: 100%;
@@ -115,18 +108,12 @@ nav {
 .hamburger .menu {
     color: rgb(215, 213, 213);
     font-size: 2rem;
-
 }
-
-
-
 
 section {
     width: 100%;
-    background: linear-gradient(to bottom, #00242C 0%, #007791 74%);
-
+    background: linear-gradient(to bottom, #00242c 0%, #007791 74%);
 }
-
 
 .hero {
     width: 100%;
@@ -135,16 +122,14 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .hero-left {
     width: 40%;
 }
 
-
 .icon {
-    background: linear-gradient(to bottom, #00D1FF, #00fff2);
+    background: linear-gradient(to bottom, #00d1ff, #00fff2);
     color: transparent;
     -webkit-background-clip: text;
     font-weight: 600;
@@ -157,7 +142,7 @@ section {
 .icon .p-img {
     width: 35px;
     height: 35px;
-    background: linear-gradient(150deg, #00D1FF, #00fff2);
+    background: linear-gradient(150deg, #00d1ff, #00fff2);
     border-radius: 50%;
     text-align: center;
     position: relative;
@@ -172,22 +157,19 @@ section {
 }
 
 .icon span {
-    border-bottom: 2px solid #0b5363
+    border-bottom: 2px solid #0b5363;
 }
-
 
 .main-content h1 {
     margin: 20px 0;
     font-size: 4vw;
     line-height: 5vw;
-
 }
 
 .main-content p {
     font-size: 1vw;
     margin: 20px 0;
     letter-spacing: 1px;
-
 }
 
 .hero-btn {
@@ -202,7 +184,7 @@ section {
     height: 55px;
     width: 220px;
     padding: 0 10px;
-    background-color: #00D1FF;
+    background-color: #00d1ff;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 30px;
@@ -222,7 +204,7 @@ section {
 .hero-btn button i {
     font-size: 1.3vw;
     font-weight: 900;
-    color: #00242C;
+    color: #00242c;
 }
 
 .hero-btn button h6 {
@@ -236,14 +218,12 @@ section {
     gap: 4px;
 }
 
-
 .hero-right {
     width: 400px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .t-box {
@@ -254,7 +234,6 @@ section {
     border-radius: 30px;
     position: relative;
     z-index: 99;
-
 }
 
 .t-box:before {
@@ -265,7 +244,7 @@ section {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(130deg, #00D1FF, #00fff2);
+    background: linear-gradient(130deg, #00d1ff, #00fff2);
     transform: translate3d(0px, 22px, 0) scale(1);
     filter: blur(0px);
     opacity: var(1);
@@ -273,11 +252,6 @@ section {
     border-radius: inherit;
 }
 
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
 .t-box::after {
     content: "";
     z-index: -1;
@@ -312,7 +286,6 @@ section {
     position: relative;
     box-shadow: 0px 0 1px black;
     position: relative;
-
 }
 
 .exc-arrow {
@@ -331,14 +304,12 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .exc-arrow i {
     color: #000000;
     font-size: 2em;
 }
-
 
 .exchange .price {
     width: 160px;
@@ -348,7 +319,6 @@ section {
     /* align-items: center; */
     flex-direction: column;
     row-gap: 7px;
-
 }
 
 .label {
@@ -375,9 +345,7 @@ section {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-
 }
-
 
 .flag-USD::after {
     content: "";
@@ -405,12 +373,11 @@ section {
     background-size: cover;
 }
 
-
 .transfer {
     box-shadow: 0px 0 1px black;
     display: flex;
     flex-direction: column;
-    background-color: #00242C;
+    background-color: #00242c;
 }
 
 .Instant {
@@ -428,7 +395,7 @@ section {
 
 .Instant span {
     font-size: 15px;
-    color: #00D1FF;
+    color: #00d1ff;
 }
 
 .bank {
@@ -447,7 +414,7 @@ section {
 .bank-icon {
     width: 35px;
     height: 35px;
-    background: linear-gradient(130deg, #00D1FF, #00fff2);
+    background: linear-gradient(130deg, #00d1ff, #00fff2);
     border-radius: 50%;
     text-align: center;
     display: flex;
@@ -485,35 +452,24 @@ section {
 
 .fee-amount h6 {
     font-weight: 800;
-
 }
 
-
-
-@media (max-width:1200px) {
-
-
-
+@media (max-width: 1200px) {
     .hero-btn button {
-
         width: 190px;
         height: 45px;
-
     }
 
     .price .value,
     .currency .exchangeValue {
         font-size: 2vw;
     }
-
-
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     nav {
         padding: 0 50px;
     }
-
 
     .hero-btn button {
         width: 150px;
@@ -523,12 +479,9 @@ section {
     .currency .exchangeValue {
         font-size: 2.5vw;
     }
-
-
-
 }
 
-@media (max-width:790px) {
+@media (max-width: 790px) {
     nav {
         padding: 0 50px;
     }
@@ -555,7 +508,6 @@ section {
 
     .hero-right {
         margin-bottom: 50px;
-
     }
 
     .main-content p {
@@ -570,13 +522,12 @@ section {
     .hero-btn button i {
         font-size: 2vw;
         font-weight: 900;
-        color: #00242C;
+        color: #00242c;
     }
 
     .hero-btn button h6 {
         font-size: 2vw;
     }
-
 
     .hero-btn button {
         width: 100%;
@@ -599,11 +550,9 @@ section {
     .currency .exchangeValue {
         font-size: 2.5vw;
     }
-
-
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     nav {
         padding: 0 20px;
     }
@@ -611,13 +560,12 @@ section {
     .hero-btn button i {
         font-size: 3vw;
         font-weight: 900;
-        color: #00242C;
+        color: #00242c;
     }
 
     .hero-btn button h6 {
         font-size: 3vw;
     }
-
 
     .hero-right {
         width: 100%;
@@ -632,5 +580,4 @@ section {
     .currency .exchangeValue {
         font-size: 3.5vw;
     }
-
 }
