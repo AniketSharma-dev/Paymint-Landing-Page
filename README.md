@@ -1,3 +1,3 @@
-# landing-page-design
+# Paymint Landing Page
 
-- [Check Here](https://aniketsharma-dev.github.io/landing-page-design/)
+- [Check Here](https://aniketsharma-dev.github.io/Paymint-Landing-Page/)
